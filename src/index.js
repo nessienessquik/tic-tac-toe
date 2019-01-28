@@ -12,33 +12,7 @@ function Square(props){
   )
 }
 
-//come back to this
-function Reset(props){
-  return (
-    <button 
-    className="" 
-    onClick={() => {}}>
-      Play again
-    </button>
-  )
-}
-
 class Board extends React.Component {
-
-
-  // handleClick(i) {
-  //   const squares = this.state.squares.slice();
-  //   if (calculateWinner(squares) || squares[i]) {
-  //     return;
-  //   }
-
-  //   //boolean that toggles between x and o, triggered by click
-  //   squares[i] = this.state.xIsNext ? 'X' : '0';
-  //   this.setState({
-  //     squares:squares,
-  //     xIsNext: !this.state.xIsNext,
-  //   });
-  // }
 
   renderSquare(i) {
     return (
@@ -68,8 +42,6 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-
-        <Reset />
       </div>
     );
   }
